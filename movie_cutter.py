@@ -13,6 +13,6 @@ flag = True
 count = 0
 while flag:
     print count
-    end, frame = video.read()
+    flag, frame = video.read()
     cv2.imwrite(OUT_PATH + NAME + str(count) + '.png', frame)
     count += 1
